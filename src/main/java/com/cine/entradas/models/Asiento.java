@@ -1,6 +1,15 @@
-package com.cine.entradas.models;
+package com.entradaservice.models;
 
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
 public class Asiento {
+
+    @Id
+    private Long id;
+
     private String fila;
     private String letra;
 
